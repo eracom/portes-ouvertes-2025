@@ -106,7 +106,7 @@ body {
   padding: 0;  
   }
 
-  .site-header__nav .nav-filieres{
+  .site-header__nav{
     display: none;
   }
 }
