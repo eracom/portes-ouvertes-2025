@@ -105,6 +105,10 @@ body {
   aspect-ratio: 4 / 5.4;                       
   padding: 0;  
   }
+
+  .site-header__nav .nav-filieres{
+    display: none;
+  }
 }
 
 
