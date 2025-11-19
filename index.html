@@ -398,12 +398,12 @@
     <footer class="site-footer" id="infos">
   <div class="footer-inner">
 
-    <!-- COLONNE LOGO -->
     <div class="footer-col footer-logo">
-      <img src="assets/img/eracom_logo_blanc.png" alt="ERACOM" class="footer-logo-img">
+      <a href="https://eracom.ch" target="_blank">
+        <img src="assets/img/eracom_logo_blanc.png" alt="ERACOM" class="footer-logo-img">
+      </a>
     </div>
 
-    <!-- ADRESSE -->
     <div class="footer-col">
       <h3 class="footer-heading">ADRESSE</h3>
       <p>
@@ -412,7 +412,6 @@
       </p>
     </div>
 
-    <!-- CONTACTS -->
     <div class="footer-col">
       <h3 class="footer-heading">CONTACTS</h3>
       <p>
@@ -421,7 +420,6 @@
       </p>
     </div>
 
-    <!-- CONNECT -->
     <div class="footer-col">
       <h3 class="footer-heading">CONNECT</h3>
       <p>
@@ -443,7 +441,6 @@
 <script>
   const backToTop = document.getElementById("back-to-top");
 
-  // Affiche le bouton après un certain scroll
   window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
       backToTop.classList.add("show");
@@ -452,7 +449,6 @@
     }
   });
 
-  // Scroll smooth vers le haut
   backToTop.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
