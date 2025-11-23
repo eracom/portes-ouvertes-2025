@@ -291,6 +291,12 @@ body {
   line-height: 1.3em;
 }
 
+.room-card__label .room_txt {
+  display: block;
+  font-family:"plain-thin", sans-serif;
+}
+
+
 .infos,
 .contact {
   padding: 2rem 0;
