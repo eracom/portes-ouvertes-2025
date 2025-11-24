@@ -296,6 +296,13 @@ body {
   font-family:"plain-thin", sans-serif;
 }
 
+.room-card__label sup {
+  vertical-align:baseline; 
+  position:relative; 
+  top:0.3em; 
+  line-height:0;
+}
+
 
 .infos,
 .contact {
