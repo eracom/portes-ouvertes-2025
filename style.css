@@ -296,6 +296,11 @@ body {
   font-family:"plain-thin", sans-serif;
 }
 
+.room-card__label .room_txt a {
+  font-family:"plain-medium", sans-serif;
+  color: #3D131C;
+}
+
 .room-card__label sup {
   vertical-align: text-top;
   line-height: 1;
