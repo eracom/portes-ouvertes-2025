@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main: #37702D;
+}
+
 @font-face {
   font-family: "plain-regular";
   src: url("assets/fonts/plain/Plain-Regular.woff2") format("woff2");
@@ -42,10 +46,10 @@ html {
 
 body {
   margin: 0;
-  background-color: #FDEDDC;
+  background-color: hsl(from var(--main) h s 92.7%);
   font-family:"plain-regular", sans-serif;
   line-height: 1.4em;
-  color:#3D131C;
+  color:hsl(from var(--main) h s 15.7%);
 }
 
 .back-to-top {
@@ -57,7 +61,7 @@ body {
 
   border-radius: 50%;
   border: none;
-  background: linear-gradient(to bottom, #f45501, #cc0127);
+  background: linear-gradient(to bottom, hsl(from var(--main) h s 48%), hsl(from var(--main) h s 40.2%));
   color: white;
   font-size: 20px;
   cursor: pointer;
@@ -110,29 +114,21 @@ body {
   text-decoration: none;
 }
 
-.hero_old {
-  min-height: calc(100vh - 140px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 0;
-}
-
 .hero {                          
-  margin-left: calc(50% - 50vw);              
+  /* margin-left: calc(50% - 50vw);              
   margin-right: calc(50% - 50vw);
   margin-top: 0px;
   margin-left:10px;
-  margin-right:10px;
+  margin-right:10px; */
 
-  background-image: url("assets/img/bienvenue_po.png");   
-  background-size: contain;                   
+  /* background-image: url("assets/img/bienvenue_po.png");    */
+  /* background-size: contain;                   
   background-position: top center;            
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 
-  height: auto;
+  /* height: auto;
   aspect-ratio: 16 / 16;                       
-  padding: 0;  
+  padding: 0;   */
 }
 
 /* Version mobile */
@@ -160,10 +156,6 @@ body {
 }
 
 
-.hero__content {
-  max-width: 700px;
-}
-
 .programme-lien{
   display: flex;
   flex-direction: column;
@@ -173,14 +165,14 @@ body {
 
 .programme-lien a{
   text-decoration: none;
-  color:#3D131C;
+  color:hsl(from var(--main) h s 15.7%);
 }
 
 
 .formation__title {
   font-weight:normal;
   font-size: 2.3em;
-   background: linear-gradient(to right, #430B18, #944011, #7A1C2A);
+   background: linear-gradient(to right, hsl(from var(--main) h s 15.3%), hsl(from var(--main) h s 32.4%), hsl(from var(--main) h s 29.4%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   background-clip: text; 
@@ -225,36 +217,14 @@ body {
   margin-bottom: 20px;
 }
 
-.room-card__visual_old {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-}
-
-.room-card__visual_old2 {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 8px;
-}
-
-.room-card__visual_old3 {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-
-  overflow: hidden;        
-
-  background-size: 100%;   
-  background-repeat: no-repeat;
-  background-position: center;  
-}
-
 .room-card__visual {
   width: 100%;
-  aspect-ratio: 4 / 4; 
+  /* aspect-ratio: 4 / 4;  */
   position: relative;
   overflow: hidden;    
+}
+.room-card__visual h2 {
+  font-size: 3rem;
 }
 
 
@@ -266,22 +236,6 @@ body {
   transform: translate(var(--offset-x, 0px),
                        var(--offset-y, 0px))
              scale(var(--scale, 1));
-}
-
-.room-ri {
-  background-image: url("assets/img/salles/s204.png");
-}
-
-.room-204 {
-  background-image: url("assets/img/salles/s204.png");
-}
-
-.room-208 {
-  background-image: url("assets/img/salles/s208.png");
-}
-
-.room-213 {
-  background-image: url("assets/img/salles/s213.png");
 }
 
 .room-card__label {
@@ -298,7 +252,7 @@ body {
 
 .room-card__label .room_txt a {
   font-family:"plain-medium", sans-serif;
-  color: #3D131C;
+  color: hsl(from var(--main) h s 15.7%);
 }
 
 .room-card__label sup {
@@ -307,23 +261,13 @@ body {
 }
 
 
-.infos,
-.contact {
-  padding: 2rem 0;
-}
-
-.filieres p{
-  font-size: 1.4em;
-  line-height: 1.6em;
-}
-
 .bottom-hero {
-  width: 100vw;                               
+  /* width: 100vw;                               
   margin-left: calc(50% - 50vw);              
   margin-right: calc(50% - 50vw);
-  margin-top: 80px;
+  margin-top: 80px; */
 
-  background-image: url("assets/img/eracom_dessin.png");   
+  /* background-image: url("assets/img/eracom_dessin.png");    */
   background-size: contain;                   
   background-position: top center;            
   background-repeat: no-repeat;
@@ -333,7 +277,7 @@ body {
 }
 
 .site-footer {
-  background-color: #9D3641;
+  background-color: hsl(from var(--main) h s 41.4%);
   color: white;
 
   width: 100vw;
